@@ -41,6 +41,7 @@ const useFirebase = () => {
     const signInByGoogle = () => {
         setIsLoading(true)
         return signInWithPopup(auth, googleProvider);
+
     }
 
     const signInByGithub = () => {
@@ -98,7 +99,9 @@ const useFirebase = () => {
         updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: photo,
-        }).then((result) => { });
+        }).then((result) => { }
+        );
+
     }
 
 

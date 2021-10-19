@@ -28,6 +28,9 @@ const Login = () => {
             .then(result => {
                 hostory.push(redirectURL);
             })
+            .catch(error => {
+                console.log(error.message);
+            });
     }
 
     const handleEmailPassSignIn = (e) => {
@@ -45,6 +48,9 @@ const Login = () => {
                 setUser(result.user);
                 hostory.push(redirectURL);
             })
+            .catch(error => {
+                console.log(error.message);
+            });
     }
 
     return (

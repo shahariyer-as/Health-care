@@ -71,7 +71,7 @@ const Header = () => {
                     </Row>
                 </Container>
             </header>
-        </div>
+        </div >
     );
 };
 
