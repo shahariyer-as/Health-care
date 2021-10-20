@@ -7,8 +7,8 @@ const Contact = () => {
     return (
         <div className="contract pt-5">
             <div>
-                <h1>Contract</h1>
-                <p>Submit your information and we will help all</p>
+                <h1 className="font-weight fs-2">Contract</h1>
+                <small className="font-weight fs-5">Submit your information and we will help all</small>
                 <div className="from-contain">
                     <Form>
                         <Form.Group className="mb-4" controlId="formBasicEmail">
@@ -34,8 +34,8 @@ const Contact = () => {
                 </div>
             </div>
             <div className="text-center pt-2">
-                <h1 className="">Medical Press</h1>
-                <div className="side-corn text-center m-5 p-3 ">
+                <h1 className="font-weight">Medical Press</h1>
+                <div className="font-weight side-corn text-center m-5 p-3 ">
                     <p>121 King Street, Melbourne</p>
                     <br />
                     <p>Victoria 3000 Australia</p>
@@ -49,7 +49,7 @@ const Contact = () => {
 
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

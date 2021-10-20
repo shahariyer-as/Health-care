@@ -10,7 +10,6 @@ const Signup = () => {
         handleEmail,
         handlePassword,
         signUpByEmailPassWord,
-        handlePhoto,
         setNameAndPhoto } = useAuth();
 
     const handleRegistration = e => {
@@ -39,7 +38,6 @@ const Signup = () => {
                                 <input type="text" onBlur={handleName} name="name" id="name" placeholder='Please enter your name...' required />
                                 <input type="email" onBlur={handleEmail} name="email" id="email" placeholder='Please enter your email...' required />
                                 <input type="password" onBlur={handlePassword} name="pass" id="pass" placeholder='Please enter your password...' required />
-                                <input type="text" onBlur={handlePhoto} name="photo" id="photo" placeholder='Please enter a valid url...' required />
                                 <button type="submit">Sign up</button>
                                 <p className='already-have-ac-txt'>Already have an account? <Link to='/login'>Login Here</Link> </p>
                             </form>

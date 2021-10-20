@@ -6,6 +6,8 @@ import { faFacebook, faInstagram, faPinterest, faTwitter } from '@fortawesome/fr
 import logo from '../../../Images/Logo.png';
 import './Header.css';
 import useAuth from '../../../hooks/useAuth';
+import { HashLink } from 'react-router-hash-link';
+
 
 
 const Header = () => {
@@ -63,8 +65,9 @@ const Header = () => {
                             <Navbar.Toggle />
                             <Navbar.Collapse className='justify-content-end nav-menu'>
                                 <Nav.Link activeStyle={activeLink} as={NavLink} to="/home">Home</Nav.Link>
-                                <Nav.Link activeStyle={activeLink} as={NavLink} to="/about">About</Nav.Link>
+                                <Nav.Link activeStyle={activeLink} as={HashLink} to="/home#services">Services</Nav.Link>
                                 <Nav.Link activeStyle={activeLink} as={NavLink} to="/specialist">Our Specialists</Nav.Link>
+                                <Nav.Link activeStyle={activeLink} as={NavLink} to="/about">About</Nav.Link>
                                 <Nav.Link activeStyle={activeLink} as={NavLink} to="/contact">Contact</Nav.Link>
                             </Navbar.Collapse>
                         </Navbar>
