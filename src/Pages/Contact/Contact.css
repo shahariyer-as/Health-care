@@ -36,3 +36,10 @@
     border: 3px solid rgb(46, 81, 112);
     border-radius: 20px;
 }
+
+@media screen and (max-width:575px) {
+    .contract {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
