@@ -12,7 +12,6 @@ import Contact from "./Pages/Contact/Contact";
 import ServiceDetail from "./Pages/Home/ServiceDetail/ServiceDetail";
 import AuthProvider from "./context/AuthProvider";
 import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
-// import Service from "./Pages/Home/Service/Service";
 import Services from "./Pages/Home/Services/Services";
 
 function App() {
