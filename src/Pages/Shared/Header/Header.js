@@ -94,7 +94,7 @@ const Header = () => {
                   as={NavLink}
                   to="/specialist"
                 >
-                  Our Specialists
+                  Our speciality
                 </Nav.Link>
                 <Nav.Link activeStyle={activeLink} as={NavLink} to="/about">
                   About

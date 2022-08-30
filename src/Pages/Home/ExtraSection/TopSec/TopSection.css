@@ -1,0 +1,72 @@
+.first-block {
+  background-color: #3eb8d7;
+  padding: 40px;
+  text-align: start;
+}
+.second-block {
+  padding: 40px;
+  background-color: #0392ce;
+  text-align: start;
+}
+.third-block {
+  padding: 40px;
+  text-align: start;
+  background-color: #3065b5;
+}
+.block-main {
+  color: white;
+  /* display: flex;
+  flex-direction: column repeat 3 4fr; */
+}
+.block-are {
+  padding: 0 important !;
+}
+
+.top-btn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 15px;
+}
+.top-btn:hover {
+  background-image: linear-gradient(#3065b5, #3eb8d7);
+}
+.top-btn {
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: #ffffff;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.top-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.top-btn span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.top-btn:hover span {
+  padding-right: 25px;
+}
+
+.top-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* responsive------------------- */
