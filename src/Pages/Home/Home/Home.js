@@ -1,4 +1,5 @@
 import React from "react";
+import Blog from "../../Blog/Blog";
 import Banner from "../Banner/Banner";
 import OurTeam from "../ExtraSection/OurTeam/OurTeam";
 import TopSection from "../ExtraSection/TopSec/TopSection";
@@ -11,6 +12,7 @@ const Home = () => {
       <TopSection></TopSection>
       <Services></Services>
       <OurTeam></OurTeam>
+      <Blog></Blog>
     </div>
   );
 };

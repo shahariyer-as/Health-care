@@ -5,6 +5,7 @@ import doctor1 from "../../../../Images/Doctor/doctor1.png";
 import doctor2 from "../../../../Images/Doctor/doctor2.png";
 import doctor3 from "../../../../Images/Doctor/doctor3.png";
 import doctor4 from "../../../../Images/Doctor/doctor4.png";
+import extraImg from "../../../../Images/Doctor/ctp.png";
 import { Link } from "react-router-dom";
 
 const OurTeam = () => {
@@ -74,7 +75,7 @@ const OurTeam = () => {
       {/*------------ indipendent section ---------------- */}
       <div className="ind">
         <h1 className="pt-2 mb-5">Independent Living - For Couples</h1>
-        <h5 className="pb-5">
+        <h5 className="pb-3">
           Independent Living is a living option for residents to enjoy the
           freedom, <br /> services & amenities with the confidence of knowing
           that support is available.
@@ -83,6 +84,18 @@ const OurTeam = () => {
           <button className="last-btn mb-5 px-5">More Information</button>
         </Link>
       </div>
+      {/* service section  */}
+      <Container className="service-section">
+        <Row>
+          <Col sm={12} md={6} lg={6}>
+            <h1 className="pt-5  ">Best Caregiver Services</h1>
+            <h3 className="">Why choose us</h3>
+          </Col>
+          <Col sm={12} md={6} lg={6}>
+            <img src={extraImg} alt="" />
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
