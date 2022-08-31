@@ -88,8 +88,46 @@ const OurTeam = () => {
       <Container className="service-section">
         <Row>
           <Col sm={12} md={6} lg={6}>
-            <h1 className="pt-5  ">Best Caregiver Services</h1>
-            <h3 className="">Why choose us</h3>
+            <h2 className="pt-3 choose-sec text-start">
+              Best Caregiver Services
+            </h2>
+            <h4 className=" mb-3 p-3 mt-3">Why choose us</h4>
+            <div className="text-start blog-up">
+              <div className="blog-deep mx-3 mt-3">
+                <h5>1</h5>
+              </div>
+              <div>
+                <h3>Meeting Your Emotional Needs</h3>
+                <p>
+                  An elderly person needs to feel safe, remain close <br /> to
+                  other people and believe that life continues.
+                </p>
+              </div>
+            </div>
+            <div className="text-start blog-up mt-3 mid-sec">
+              <div className="blog-deep mx-3 mt-3">
+                <h5>2</h5>
+              </div>
+              <div>
+                <h3>Meeting Your Emotional Needs</h3>
+                <p>
+                  An elderly person needs to feel safe, remain close <br /> to
+                  other people and believe that life continues.
+                </p>
+              </div>
+            </div>
+            <div className="text-start blog-up mt-3">
+              <div className="blog-deep mx-3 mt-3">
+                <h5>3</h5>
+              </div>
+              <div>
+                <h3>Meeting Your Emotional Needs</h3>
+                <p>
+                  An elderly person needs to feel safe, remain close <br /> to
+                  other people and believe that life continues.
+                </p>
+              </div>
+            </div>
           </Col>
           <Col sm={12} md={6} lg={6}>
             <img src={extraImg} alt="" />
