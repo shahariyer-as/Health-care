@@ -22,40 +22,24 @@ function App() {
 
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
 
-          <Route path="/" element={<Home></Home>} />
-
-          <PrivateRoute path="/servicedetail/:serviceID">
-            <ServiceDetail></ServiceDetail>
-          </PrivateRoute>
-
-          <Route path="/about">
-            <About></About>
-          </Route>
-
-          <Route path="/specialist">
-            <Specialist></Specialist>
-          </Route>
-          <Route path="/services">
-            <Services></Services>
-          </Route>
-
-          <Route path="/contact">
-            <Contact></Contact>
-          </Route>
-
-          <Route path="/login">
-            <Login></Login>
-          </Route>
-          <Route path="/signup">
-            <Signup></Signup>
-          </Route>
-
-          <Route path="*">
-            <NotFound></NotFound>
-          </Route>
+          <Route
+            path="/servicedetail/:serviceID"
+            element={
+              <PrivateRoute>
+                <ServiceDetail />
+              </PrivateRoute>
+            }
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/specialist" element={<Specialist />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-
         <Footer></Footer>
       </AuthProvider>
     </div>
