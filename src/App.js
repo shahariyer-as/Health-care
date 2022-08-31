@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home/Home/Home";
 import Footer from "./Pages/Shared/Footer/Footer";
@@ -18,51 +18,45 @@ function App() {
   return (
     <div className="App">
       <AuthProvider>
-        <BrowserRouter>
-          <Header></Header>
+        <Header></Header>
 
-          <Switch>
-            <Route path="/home">
-              <Home></Home>
-            </Route>
+        <Routes>
+          <Route path="/home" element={<Home />} />
 
-            <Route exact path="/">
-              <Home></Home>
-            </Route>
+          <Route path="/" element={<Home></Home>} />
 
-            <PrivateRoute path="/servicedetail/:serviceID">
-              <ServiceDetail></ServiceDetail>
-            </PrivateRoute>
+          <PrivateRoute path="/servicedetail/:serviceID">
+            <ServiceDetail></ServiceDetail>
+          </PrivateRoute>
 
-            <Route path="/about">
-              <About></About>
-            </Route>
+          <Route path="/about">
+            <About></About>
+          </Route>
 
-            <Route path="/specialist">
-              <Specialist></Specialist>
-            </Route>
-            <Route path="/services">
-              <Services></Services>
-            </Route>
+          <Route path="/specialist">
+            <Specialist></Specialist>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
 
-            <Route path="/contact">
-              <Contact></Contact>
-            </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
 
-            <Route path="/login">
-              <Login></Login>
-            </Route>
-            <Route path="/signup">
-              <Signup></Signup>
-            </Route>
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+          <Route path="/signup">
+            <Signup></Signup>
+          </Route>
 
-            <Route path="*">
-              <NotFound></NotFound>
-            </Route>
-          </Switch>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+        </Routes>
 
-          <Footer></Footer>
-        </BrowserRouter>
+        <Footer></Footer>
       </AuthProvider>
     </div>
   );
