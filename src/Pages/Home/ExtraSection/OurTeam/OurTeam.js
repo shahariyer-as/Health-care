@@ -69,8 +69,8 @@ const OurTeam = () => {
           </Col>
         </Row>
       </Container>
-      <Link to="about">
-        <button className="last-btn mb-5 ">Meet all Team members</button>
+      <Link className="team-btn" to="about">
+        <button className="last-btn  mb-5 ">Meet all Team members</button>
       </Link>
       {/*------------ indipendent section ---------------- */}
       <div className="ind">
