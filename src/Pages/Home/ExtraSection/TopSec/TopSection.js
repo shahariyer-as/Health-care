@@ -38,7 +38,7 @@ const TopSection = () => {
           <Col style={{ padding: "0px" }} xs={12} md={4}>
             <div className="third-block">
               <h4>Opening hours</h4> <br />
-              <p style={{ paddingBottom: "24px" }}>
+              <p style={{ paddingBottom: "" }}>
                 <span>
                   Monday to Friday
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
